@@ -163,5 +163,27 @@ But in `react.production.min.js`, the same issue will just silently fail or give
 | Which one is faster and smaller? | react.production.min.js |
 | Which one should I use in real websites? | react.production.min.js |**
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React CDN Example</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- React CDN (Development version) -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <script>
+    const header = React.createElement("h1", {}, "Hello World");
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(header);
+  </script>
+</body>
+</html>
 
 
