@@ -162,3 +162,6 @@ But in `react.production.min.js`, the same issue will just silently fail or give
 | Which one helps in learning/debugging? | react.development.js |
 | Which one is faster and smaller? | react.production.min.js |
 | Which one should I use in real websites? | react.production.min.js |**
+
+
+
